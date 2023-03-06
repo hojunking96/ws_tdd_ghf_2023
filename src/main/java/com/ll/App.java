@@ -35,6 +35,10 @@ public class App {
 
                     System.out.printf("%d번 명언이 등록되었습니다.\n", id);
                     break;
+                case "목록":
+                    System.out.println("----------------------");
+
+                    return;
                 default:
                     System.out.printf("`%s`(은)는 올바르지 않은 명령입니다.\n", cmd);
                     break;
