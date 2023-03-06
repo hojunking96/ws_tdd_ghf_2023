@@ -48,6 +48,9 @@ public class App {
                         System.out.printf("%d / %s / %s\n", wiseSaying.id, wiseSaying.author, wiseSaying.content);
                     }
                     break;
+                case "삭제":
+                    System.out.println("1번 명언이 삭제되었습니다.");
+                    break;
                 default:
                     System.out.printf("`%s`(은)는 올바르지 않은 명령입니다.\n", cmd);
                     break;
