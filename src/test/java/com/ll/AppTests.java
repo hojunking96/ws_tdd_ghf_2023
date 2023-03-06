@@ -27,10 +27,15 @@ public class AppTests {
     }
 
     @Test
-    public void 출력을_모니터에_하지_않고_문자열로_얻기() {
+    @DisplayName("출력을 모니터에 하지 않고 문자열로 얻기")
+    public void t2() {
+        //sout 에 대한 화면출력 금지 시작
         ByteArrayOutputStream output = TestUtil.setOutToByteArray();
         System.out.print("안녕");
+        //그 동안 출력되지 않던 내용들을 문자열로 반환
         String rs = output.toString();
+
+        //sout에 대한 화면출력 금지 끝
         TestUtil.clearSetOutToByteArray(output);
 
         assertEquals("안녕", rs);
